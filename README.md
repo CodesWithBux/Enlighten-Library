@@ -1,8 +1,7 @@
-# Enlighten — Public Library
+# Enlighten - Public Library
 
-A complete, responsive, multi-page eBook library and store, built with vanilla
-**HTML, CSS, and JavaScript** — no frameworks and no build step. Browse the catalogue,
-filter and search, open a book, add to a cart, and complete checkout with an order
+A complete, responsive, multi-page eBook library and store, built **HTML, CSS, and JavaScript**.  Browse
+the catalogue,filter and search, open a book, add to a cart, and complete checkout with an order
 confirmation. Cart, library, and recently-viewed lists persist across pages.
 
 ## Preview
@@ -11,7 +10,7 @@ confirmation. Cart, library, and recently-viewed lists persist across pages.
 
 ![Enlighten home page](images/home.png)
 
-**Categories** — books grouped by genre, with filter and search
+**Categories** - books grouped by genre, with filter and search
 
 ![Categories page](images/categories.png)
 
@@ -20,7 +19,7 @@ confirmation. Cart, library, and recently-viewed lists persist across pages.
 ![My library page](images/my-library.png)
 ![Cart page](images/cart.png)
 
-**Wireframes — all pages (desktop)**
+**Wireframes - all pages (desktop)**
 
 ![Desktop wireframes for all pages](images/wireframes-all-pages.png)
 
@@ -28,16 +27,16 @@ confirmation. Cart, library, and recently-viewed lists persist across pages.
 
 - **Ten pages**, each its own HTML file: Home, Book detail, Categories, My Library,
   Cart, Checkout, Confirmation, About, Contact, Privacy.
-- **Browse & discover** — featured hero, New arrivals, Trending, and Best seller rows.
-- **Filter & search** — a Genre/Author filter dropdown and a live search that match
+- **Browse & discover** - featured hero, New arrivals, Trending, and Best seller rows.
+- **Filter & search** - a Genre/Author filter dropdown and a live search that match
   on title, author, and genre.
 - **Book cards** with hover lift, shadow, and a quick-add button.
-- **Cart & checkout** — add/remove items, running subtotal, a validated checkout form,
+- **Cart & checkout** - add/remove items, running subtotal, a validated checkout form,
   and an order-confirmation page with a reference number.
-- **My library** — save titles and find them on a dedicated page.
-- **Persistence** — cart, library, and recently-viewed survive page loads via `localStorage`.
+- **My library** - save titles and find them on a dedicated page.
+- **Persistence** - cart, library, and recently-viewed survive page loads via `localStorage`.
 - **Responsive** down to mobile with a slide-in navigation drawer.
-- **Accessible** — skip link, keyboard focus states, ARIA on interactive regions,
+- **Accessible** - skip link, keyboard focus states, ARIA on interactive regions,
   `aria-live` status messages, and reduced-motion support.
 - **Active-page navigation** highlighting in the brand accent colour.
 
@@ -45,10 +44,10 @@ confirmation. Cart, library, and recently-viewed lists persist across pages.
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Home — hero + New arrivals / Trending / Best seller |
-| `book.html` | Book detail (`book.html?id=1`) — summary, reviews, similar, recently viewed |
+| `index.html` | Home - hero + New arrivals / Trending / Best seller |
+| `book.html` | Book detail (`book.html?id=1`) - summary, reviews, similar, recently viewed |
 | `categories.html` | Books by genre; also handles `?genre=`, `?author=`, and `?q=` filters |
-| `library.html` | My library — saved books |
+| `library.html` | My library - saved books |
 | `cart.html` | Cart with subtotal |
 | `checkout.html` | Checkout form + order summary |
 | `confirmation.html` | Order confirmed (`?ref=…`) |
@@ -68,20 +67,13 @@ enlighten/
 ├── about.html
 ├── contact.html
 ├── privacy.html
-├── styles.css          # design tokens, layout, hover, cart, checkout, responsive
-├── data.js             # the BOOKS catalogue + reviews (loaded first on every page)
-├── app.js              # cart/library/checkout logic + per-page rendering
-├── images/             # screenshots and wireframes
+├── styles.css          
+├── data.js             
+├── app.js              
+├── images/             
 └── README.md
 ```
 
-## Getting started
-
-```bash
-# from the project folder
-python3 -m http.server
-# then open http://localhost:8000
-```
 
 Serving the folder (rather than opening files directly) lets `localStorage` persist the
 cart and library across pages.
