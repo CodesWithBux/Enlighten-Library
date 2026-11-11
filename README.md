@@ -4,6 +4,7 @@ A complete, responsive, multi-page eBook library and store, built **HTML, CSS, a
 the catalogue,filter and search, open a book, add to a cart, and complete checkout with an order
 confirmation. Cart, library, and recently-viewed lists persist across pages.
 
+**[Open Enlighten](https://codeswithbux.github.io/Enlighten-Library/)**
 ## Preview
 
 **Home**
